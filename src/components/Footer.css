@@ -7,7 +7,7 @@
 #stripe {
   width: 64px;
   height: 3px;
-  background: #F5F3F4;
+  background: rgba(65, 0, 243, 0.562);
   position: absolute;
   transition: left 0.3s;
 }
