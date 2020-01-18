@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import { FaBeer } from 'react-icons/fa';
 import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import isaac from './isaac.JPG'
+import rainy from './rainy.gif';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div id="container">
+        <Header/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <span id="name">Isaac Ng</span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <Footer />
     </div>
   );
 }

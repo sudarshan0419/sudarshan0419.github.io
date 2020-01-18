@@ -2,12 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(to right bottom, #94177f, #244475);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,3 +16,79 @@
 .App-link {
   color: #09d3ac;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Finger+Paint');
+@import url('https://fonts.googleapis.com/css?family=Varela');
+/*http://skyentific.me/adding-fonts-to-create-react-app/*/
+@font-face {
+  font-family: 'justicegrad';
+  src: local('justicegrad'), url(./fonts/justicegrad.ttf) format('truetype');
+}
+
+/*background-image: url('rainy.gif');*/
+#container {
+  background: linear-gradient(to right top, rgb(29, 25, 24), #171312);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#name {
+  font-family: 'varela';
+}
+
+/*Neon: https://zcode.io/tutorials/neon-glow-text*/
+/* p {
+  text-align: center;
+  font-size: 7em;
+  margin: 20px 0 20px 0;
+}
+
+span {
+  cursor:pointer;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+p:nth-child(1) span {
+  color: rgb(222, 184, 135);
+  font-family: 'justicegrad';
+  font-size: 50%;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p:nth-child(1) span:hover {
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  p {
+    font-size: 3.5em;
+  }
+} */

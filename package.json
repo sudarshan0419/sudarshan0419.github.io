@@ -4,8 +4,12 @@
   "private": true,
   "dependencies": {
     "react": "^16.11.0",
+    "react-dock": "^0.2.4",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-icons": "^3.8.0",
+    "react-osx-dock": "^1.0.0",
+    "react-scripts": "3.2.0",
+    "semantic-ui-react": "^0.88.2"
   },
   "scripts": {
     "start": "react-scripts start",
