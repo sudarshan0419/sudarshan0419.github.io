@@ -4,10 +4,12 @@
   justify-content:center;
 }
 
-#stripe {
+#headerstripe {
   width: 64px;
   height: 3px;
-  background: #F5F3F4;
   position: absolute;
-  transition: left 0.3s;
+  bottom: 0;
+  transition: left 1.0s;
+  transition: width 1.0s;
+  transition: background 0.5s;
 }

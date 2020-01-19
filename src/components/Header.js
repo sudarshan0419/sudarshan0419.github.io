@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Footer.css';
+import './Header.css';
 import Dock from "react-dock";
 
 //Links:
@@ -8,7 +8,7 @@ import Dock from "react-dock";
 
 function Header() {
 
-  const [count, setCount] = useState(0);
+  const [headerCount, setHeaderCount] = useState(0);
 
   const styleArr = [
     {color:"#6ADC0B", margin: "20px"},
@@ -24,23 +24,20 @@ function Header() {
     'more_stuff'
   ];
 
-  const handleMouseEnter = (e) => {
-    setCount(e.target.getBoundingClientRect().x);
-    document.getElementById("stripe").style.width = "64px";
-  };
-
-  const handleMouseExit = (e) => {
-    setCount(0);
-    document.getElementById("stripe").style.width = "100%";
+  const handleMouseEnter = (e, color) => {
+    setHeaderCount(e.target.getBoundingClientRect().x-10);
+    const headerwidth = e.target.getBoundingClientRect().width + 10 + 10;
+    document.getElementById("headerstripe").style.width = headerwidth + "px";
+    document.getElementById("headerstripe").style.background = color;
   };
 
   return (
     <Dock dockStyle={{ background: 'rgba(0, 0, 0, 0)' }} size=".07" position='top' isVisible={true}>
       <div class="topContainer">
         {textArr.map((item, index) => (
-          <p style={styleArr[index]}>{item}</p>
+          <div ><p style={styleArr[index]} onMouseEnter={(e) => handleMouseEnter(e, styleArr[index].color)}>{item}</p></div>
         ))}
-        {/* <div id="stripe" style={{ left: count, width: '100%' }} /> */}
+        <div id="headerstripe" style={{ left: headerCount, width: '100%', background: "rgb(196, 188, 190)" }} />
       </div>
     </Dock>
   );

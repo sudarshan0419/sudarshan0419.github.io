@@ -33,7 +33,7 @@
 
 /*background-image: url('rainy.gif');*/
 #container {
-  background: linear-gradient(to right top, #94177f, #244475);
+  background: linear-gradient(to right top, rgb(29, 25, 24), #171312);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,8 +51,8 @@
   font-family: 'varela';
 }
 
-/* Neon: https://zcode.io/tutorials/neon-glow-text*/
-p {
+/*Neon: https://zcode.io/tutorials/neon-glow-text*/
+/* p {
   text-align: center;
   font-size: 7em;
   margin: 20px 0 20px 0;
@@ -91,4 +91,4 @@ p:nth-child(1) span:hover {
   p {
     font-size: 3.5em;
   }
-}
+} */
