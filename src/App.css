@@ -1,6 +1,9 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 
 .App-header {
   background: linear-gradient(to right bottom, #94177f, #244475);
@@ -51,44 +54,71 @@
   font-family: 'varela';
 }
 
-/*Neon: https://zcode.io/tutorials/neon-glow-text*/
-/* p {
-  text-align: center;
-  font-size: 7em;
-  margin: 20px 0 20px 0;
-}
 
-span {
-  cursor:pointer;
+.nav a {
+  display: block;
   text-decoration: none;
-  transition: all 0.5s;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  -webkit-box-shadow: inset 0 -3px 0 rgb(0 0 0 / 5%);
+  -moz-box-shadow: inset 0 -3px 0 rgba(0,0,0,0.05);
+  box-shadow: inset 0 -3px 0 rgb(0 0 0 / 5%);
+  line-height: 2.5;
+  height: 2.6em;
 }
 
-p:nth-child(1) span {
-  color: rgb(222, 184, 135);
-  font-family: 'justicegrad';
-  font-size: 50%;
-  animation: neon1 1.5s ease-in-out infinite alternate;
+ol, ul {
+  list-style: none;
+  display: flex;
+}
+.nav {
+  overflow: hidden;
+  width:100%;
 }
 
-p:nth-child(1) span:hover {
-  animation: neon1 1.5s ease-in-out infinite alternate;
+li {
+  flex-grow: 1;
 }
 
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-  }
+.container {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0px -4px 0px rgb(0 0 0 / 5%);
+  line-height: 1;
+  letter-spacing: 0.3em;
+  padding: 1.25em 0.1em;
+  position: relative;
+  z-index: 2;
+  -webkit-font-smoothing: antialiased;
+  background-color: #333333;
+  font-size: 3vw;
+  padding: 0.75em 0.1em;
+  color: #f3f3f3;
+
 }
 
-@media (max-width: 650px) {
-  #container {
-    width: 100%;
-  }
-  p {
-    font-size: 3.5em;
-  }
-} */
+.home:hover {
+  border-bottom: 1px solid #6ADC0B;
+  -webkit-transition:  border-bottom 2s; /* For Safari 3.1 to 6.0 */
+  transition:  border-bottom 2s;
+}
+
+.about:hover {
+  border-bottom: 1px solid #0175BE;
+  -webkit-transition:  border-bottom 2s; /* For Safari 3.1 to 6.0 */
+  transition:  border-bottom 2s;
+}
+
+.stuff:hover {
+  border-bottom: 1px solid #F4303C;
+  -webkit-transition:  border-bottom 2s; /* For Safari 3.1 to 6.0 */
+  transition:  border-bottom 2s;
+}
+
+.morestuff:hover {
+  border-bottom: 1px solid #F5EF17;
+  -webkit-transition:  border-bottom 2s; /* For Safari 3.1 to 6.0 */
+  transition:  border-bottom 2s;
+}
