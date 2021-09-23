@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import Routes from "./Routes";
 import Header from "./components/Header"
 
@@ -15,10 +15,10 @@ function App() {
           <div class="nav">
             <nav>
               <ul>
-                <li><Link onMouseEnter={() => { storeColor(color); changeColor("#333333") }} onMouseLeave={() => changeColor(stored)} to="/" className="home">home</Link></li>
-                <li><Link onMouseEnter={() => { storeColor(color); changeColor("#999999") }} onMouseLeave={() => changeColor(stored)} to="/about" className="about">about</Link></li>
-                <li><Link onMouseEnter={() => { storeColor(color); changeColor("#e54b4b") }} onMouseLeave={() => changeColor(stored)} className="stuff">stuff</Link></li>
-                <li><Link onMouseEnter={() => { storeColor(color); changeColor("#e54b4b") }} onMouseLeave={() => changeColor(stored)} className="morestuff">more stuff</Link></li>
+                <li><NavLink exact activeStyle={{ color: "#6ADC0B", borderBottom: "1px solid #6ADC0B" }} to="/" className="home">home</NavLink></li>
+                <li><NavLink activeStyle={{ color: "#0175BE", borderBottom: "1px solid #0175BE" }} to="/about" className="about">about</NavLink></li>
+                <li><NavLink activeStyle={{ color: "#F4303C", borderBottom: "1px solid #F4303C" }} to="/stuff" className="stuff">stuff</NavLink></li>
+                <li><NavLink activeStyle={{ color: "#F5EF17", borderBottom: "1px solid #F5EF17" }} to="/morestuff" className="morestuff">more stuff</NavLink></li>
               </ul>
             </nav>
             <Routes />

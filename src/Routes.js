@@ -4,7 +4,7 @@ import Home from "./components/Home";
 export default function Routes() {
   return (
     <Switch>
-      <Route exact path="/usefulscience/">
+      <Route exact path="/">
         <Home />
       </Route>
     </Switch>
