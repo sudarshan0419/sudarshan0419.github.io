@@ -82,168 +82,145 @@ li {
 
 }
 
-
+/*  https://stackoverflow.com/questions/26726436/css-bottom-border-transition-expand-from-middle */
 .home:hover {
   color: #6ADC0B;
-  -webkit-transition: color .5s;
-  transition: color .5s;
+  border-bottom: 2px solid #6ADC0B;
+  -webkit-transition: color .5s, border-bottom .5s;
+  transition: color .5s, border-bottom .5s;
 }
 
 .home::after {
   content: '';
   display: block;
-  top: 100%;
+  margin: auto;
   height: 3px;
-  width: 100%;
-  border-bottom: 1px solid #6ADC0B;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  transition: color 0.1s, -webkit-transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
 
-.home:hover::after,
-.home:focus::after {
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+.home:hover::after{
+  width: 100%;
+  background: #6ADC0B;
 }
 
 
 .about:hover {
   color: #0175BE;
-  -webkit-transition: color .5s;
-  transition: color .5s;
+  border-bottom: 2px solid #0175BE;
+  -webkit-transition: color .5s, border-bottom .5s;
+  transition: color .5s, border-bottom .5s;
 }
 
 .about::after {
   content: '';
   display: block;
-  top: 100%;
+  margin: auto;
   height: 3px;
-  width: 100%;
-  border-bottom: 1px solid #0175BE;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  transition: color 0.1s, -webkit-transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
 
-.about:hover::after,
-.about:focus::after {
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+.about:hover::after {
+  width: 100%;
+  background: #0175BE;
 }
 
 .stuff:hover {
   color: #F4303C;
-  -webkit-transition: color .5s;
-  transition: color .5s;
+  border-bottom: 2px solid #F4303C;
+  -webkit-transition: color .5s, border-bottom .5s;
+  transition: color .5s, border-bottom .5s;
 }
 
 .stuff::after {
   content: '';
   display: block;
-  top: 100%;
+  margin: auto;
   height: 3px;
-  width: 100%;
-  border-bottom: 1px solid #F4303C;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  transition: color 0.1s, -webkit-transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
 }
 
-.stuff:hover::after,
-.stuff:focus::after {
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+.stuff:hover::after {
+  width: 100%;
+  background: #F4303C;
 }
 
 .morestuff:hover {
   color: #F5EF17;
-  -webkit-transition: color .5s;
-  transition: color .5s;
+  border-bottom: 2px solid #F5EF17;
+  -webkit-transition: color .5s, border-bottom .5s;
+  transition: color .5s, border-bottom .5s;
 }
 
 .morestuff::after {
   content: '';
   display: block;
-  top: 100%;
+  margin: auto;
   height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.morestuff:hover::after {
   width: 100%;
-  border-bottom: 1px solid #F5EF17;
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  transition: color 0.1s, -webkit-transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out;
-  transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  background: #F5EF17;
 }
 
-.morestuff:hover::after,
-.morestuff:focus::after {
-  -webkit-transform-origin: center top;
-          transform-origin: center top;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-}
-
-/* .home:focus, .home:active {
-  border-bottom: 1px solid #6ADC0B;
-  color: #6ADC0B;
-}
-
-.about:hover {
-  border-bottom: 1px solid #0175BE;
-  color: #0175BE;
-  -webkit-transition: color 2s, border-bottom 2s;
-  transition: color 2s, border-bottom 2s;
+#footer{
+  margin-top: 1rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
   left: 0;
+  text-align: center;
   width: 100%;
 }
 
-.about:focus, .about:active {
-  border-bottom: 1px solid #0175BE;
-  color: #0175BE;
+#footer .content a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
 }
 
-.stuff:hover {
-  border-bottom: 1px solid #F4303C;
-  color: #F4303C;
-  -webkit-transition: color 2s, border-bottom 2s;
-  transition: color 2s, border-bottom 2s;
+.icon:link {
+  color: rgb(222, 184, 135);
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.stuff:focus, .stuff:active {
-  border-bottom: 1px solid #F4303C;
-  color: #F4303C;
+.icon:visited {
+  color: rgb(226, 171, 99);
+  background-color: transparent;
+  text-decoration: none;
 }
 
-
-.morestuff:hover {
-  border-bottom: 1px solid #F5EF17;
-  color: #F5EF17;
-  -webkit-transition: color 2s, border-bottom 2s ease-out;
-  transition: color 2s, border-bottom 2s ease-out;
+.icon:hover {
+  color: lightcoral;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.morestuff:focus, .morestuff:active {
-  border-bottom: 1px solid #F5EF17;
-  color: #F5EF17;
-} */
+.icon:active {
+  color: rgb(240, 160, 128);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 30px;
+  margin: 5px;
+}
+
+li.leaf {
+  flex-grow: 0;
+}
+
+.menu {
+  display: inline-flex;
+}

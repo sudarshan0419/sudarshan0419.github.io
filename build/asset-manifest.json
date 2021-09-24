@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.750477b1.chunk.css",
+    "main.js": "/static/js/main.a4686c60.chunk.js",
+    "main.js.map": "/static/js/main.a4686c60.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3f435416.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3f435416.js.map",
+    "static/css/2.400f043a.chunk.css": "/static/css/2.400f043a.chunk.css",
+    "static/js/2.6237289e.chunk.js": "/static/js/2.6237289e.chunk.js",
+    "static/js/2.6237289e.chunk.js.map": "/static/js/2.6237289e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ef43592fda1ebbfae12dc9f15ed7f601.js": "/precache-manifest.ef43592fda1ebbfae12dc9f15ed7f601.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.400f043a.chunk.css.map": "/static/css/2.400f043a.chunk.css.map",
+    "static/css/main.750477b1.chunk.css.map": "/static/css/main.750477b1.chunk.css.map",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/App.css": "/static/media/justicegrad.091c95a8.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f435416.js",
+    "static/css/2.400f043a.chunk.css",
+    "static/js/2.6237289e.chunk.js",
+    "static/css/main.750477b1.chunk.css",
+    "static/js/main.a4686c60.chunk.js"
+  ]
+}
