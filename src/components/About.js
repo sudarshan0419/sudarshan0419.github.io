@@ -9,7 +9,7 @@ export default function About() {
                 <h2 id="title">Absorb my essence:</h2>
                 <p>I am currently pursuing a Master of Science in Electrical Engineering with a focus on machine vision. 
                     Mainly, my research focuses on implementing deep learning based road lane detection.  
-                    I have been exploring many deep learning algorithms like my butt, Spatial CNN and LSTMs.
+                    I have been exploring many deep learning algorithms like Spatial CNN and LSTMs.
                     i love tennis balls.</p>
             <h2>Career Goals:</h2>
             <ul id="career">
