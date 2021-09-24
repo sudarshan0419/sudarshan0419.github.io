@@ -20,8 +20,8 @@ function Header() {
   const textArr = [
     'home',
     'about',
-    'stuff',
-    'more_stuff'
+    'work',
+    'more_work'
   ];
 
   const handleMouseEnter = (e, color) => {

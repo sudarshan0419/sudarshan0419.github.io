@@ -128,14 +128,14 @@ li {
   background: #0175BE;
 }
 
-.stuff:hover {
+.work:hover {
   color: #F4303C;
   border-bottom: 2px solid #F4303C;
   -webkit-transition: color .5s, border-bottom .5s;
   transition: color .5s, border-bottom .5s;
 }
 
-.stuff::after {
+.work::after {
   content: '';
   display: block;
   margin: auto;
@@ -145,19 +145,19 @@ li {
   transition: width .5s ease, background-color .5s ease;
 }
 
-.stuff:hover::after {
+.work:hover::after {
   width: 100%;
   background: #F4303C;
 }
 
-.morestuff:hover {
+.contact:hover {
   color: #F5EF17;
   border-bottom: 2px solid #F5EF17;
   -webkit-transition: color .5s, border-bottom .5s;
   transition: color .5s, border-bottom .5s;
 }
 
-.morestuff::after {
+.contact::after {
   content: '';
   display: block;
   margin: auto;
@@ -167,7 +167,7 @@ li {
   transition: width .5s ease, background-color .5s ease;
 }
 
-.morestuff:hover::after {
+.contact:hover::after {
   width: 100%;
   background: #F5EF17;
 }

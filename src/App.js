@@ -14,12 +14,12 @@ function App() {
               <ul>
                 <li><NavLink exact activeStyle={{ color: "#6ADC0B", borderBottom: "1px solid #6ADC0B" }} to="/" className="home">home</NavLink></li>
                 <li><NavLink activeStyle={{ color: "#0175BE", borderBottom: "1px solid #0175BE" }} to="/about" className="about">about</NavLink></li>
-                <li><NavLink activeStyle={{ color: "#F4303C", borderBottom: "1px solid #F4303C" }} to="/stuff" className="stuff">stuff</NavLink></li>
-                <li><NavLink activeStyle={{ color: "#F5EF17", borderBottom: "1px solid #F5EF17" }} to="/morestuff" className="morestuff">more stuff</NavLink></li>
+                <li><NavLink activeStyle={{ color: "#F4303C", borderBottom: "1px solid #F4303C" }} to="/work" className="work">work</NavLink></li>
+                <li><NavLink activeStyle={{ color: "#F5EF17", borderBottom: "1px solid #F5EF17" }} to="/contact" className="contact">contact</NavLink></li>
               </ul>
             </nav>
-            <Routes />
           </div>
+          <Routes />
         </Router>
       </div>
       <footer id="footer">
@@ -28,6 +28,7 @@ function App() {
             <ul>
               <li class="leaf"><a href="https://www.linkedin.com/in/sudarshan-pillai-00a586119/" target="_blank"><i class="icon fa fa-linkedin"></i></a></li>
               <li class="leaf"><a href="https://github.com/sudarshan0419" target="_blank"><i class="icon fa fa-github"></i></a></li>
+              <li class="leaf"><a href="https://github.com/sudarshan0419" target="_blank"><i class="icon fa fa-file"></i></a></li>
             </ul>
           </nav>
         </div>

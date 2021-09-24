@@ -1,10 +1,9 @@
 {
-  "name": "sudarshan0419.github.io",
+  "homepage": "http://sudarshan0419.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "gh-pages": "^3.2.3",
     "react": "^16.11.0",
     "react-dock": "^0.2.4",
     "react-dom": "^16.11.0",

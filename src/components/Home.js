@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className="suds">
       <div className="lander">
-        <h1 id="title">Sudarshan Pillai</h1>
-        <img src = {suds}/>
+        <h2 id="title">Hi, my name is Sudarshan.</h2>
+        <p>Check out my links and resume below!</p>
       </div>
     </div>
   );
